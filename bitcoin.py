@@ -1,28 +1,3 @@
-"""
-A simplified Bitcoin-like blockchain system with a graphical interface.
-
-This program implements the core elements of a very small cryptocurrency: key
-generation, address creation, transaction signing/verification, block
-construction, a proof-of-work based mining mechanism, and chain validation.  A
-Tkinter GUI ties these pieces together allowing you to create wallets, send
-funds, mine pending transactions into new blocks, explore the chain, and
-query balances.  The entire application is contained in a single file for
-Ease of deployment and demonstration.
-
-Dependencies:
-
-- Python 3.  The code only uses the standard library and the `cryptography`
-  package for elliptic curve operations.
-- The `cryptography` package.  Install it via `pip install cryptography` if
-  it's not already available.
-
-Running the program will open a window with buttons and fields for each
-functionality.  You can generate new wallets, copy your private keys and
-addresses, sign and submit transactions, mine blocks to earn rewards and
-confirm transactions, inspect the blockchain and unconfirmed transactions,
-and query balances by address.
-"""
-
 import hashlib
 import json
 import time
