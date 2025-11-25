@@ -79,10 +79,10 @@ while not computed_hash.startswith('0' * self.difficulty):
 
 整个系统围绕类：
 
-- Transaction：交易类  
-- Block：区块类  
-- Blockchain：链的管理类  
-- BlockchainGUI：图形界面  
+-- Transaction：交易类  
+-- Block：区块类  
+-- Blockchain：链的管理类  
+-- BlockchainGUI：图形界面  
 
 每个模块的职责都比较单一，整体结构不算复杂。
 
@@ -110,12 +110,12 @@ address = address_from_public(public_key)
 
 一笔交易包含：
 
-- 发送方地址
-- 接收方地址
-- 金额
-- 时间
-- 公钥
-- 签名
+发送方地址
+接收方地址
+金额
+ 时间
+ 公钥
+ 签名
 
 签名过程：
 
@@ -142,11 +142,11 @@ tx.sign_transaction(private_key)
 
 图形界面用 Tkinter 写的，功能大概包括：
 
-- 生成钱包  
-- 创建交易  
-- 挖矿  
-- 浏览整个区块链  
-- 输入地址查询余额  
+-- 生成钱包  
+-- 创建交易  
+-- 挖矿  
+-- 浏览整个区块链  
+-- 输入地址查询余额  
 
 
 ---
@@ -155,8 +155,9 @@ tx.sign_transaction(private_key)
 
 目前整个项目已经完成了核心部分：
 
-- 区块、交易、区块链等基本结构都能正常工作  
-- ECDSA 的签名和验证流程已经能跑通  
-- 挖矿和工作量证明能够正常执行  
-- 图形界面的所有模块都能正常使用  
+-- 区块、交易、区块链等基本结构都能正常工作  
+-- ECDSA 的签名和验证流程已经能跑通  
+-- 挖矿和工作量证明能够正常执行  
+-- 图形界面的所有模块都能正常使用  
+
 
